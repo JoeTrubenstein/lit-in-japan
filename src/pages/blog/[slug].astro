@@ -41,7 +41,7 @@ export async function getStaticPaths() {
 const { post } = Astro.props;
 ---
 
-<Layout title="An Example Blog Post">
+<Layout title={post.title}>
   <section class="py-6 prose prose-img:w-full prose-img:aspect-video prose-img:object-cover">
     <img
       src={post.featuredImage.node.mediaItemUrl}
